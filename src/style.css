@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #0A0C1B;
+    color: #FDFCFF;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 4rem 2rem;
+}
+
+.hero-container{
+    background: #1C1938;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.image-container{
+    background-image: url("../images/image-header-mobile.jpg");
+    mix-blend-mode: luminosity;
+    filter: contrast(1.2) brightness(1.1);
+    width: 100%;
+    min-height: 15rem;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.content-container{
+    padding: 2rem;
+    text-align: center;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.title span{
+    color: #854DAE;
+}
+
+.text{
+    margin: 1rem 0;
+    font-weight: lighter;
+    line-height: 1.5rem;
+    word-spacing: .2rem;
+    font-weight: lighter;
+    color: #ACAAC2;
+}
+
+.stats-container{
+    margin: 0 auto;
+    padding: 0 0 1rem 0;
+}
+
+.stats{
+    list-style: none;
+    text-align: center;
+    margin-right: 2.5rem;
+}
+
+.stats h2{
+    margin-bottom: .5rem;
+}
+
+.stats li{
+    margin-bottom: 1.5rem;
+}
+
+.stats small{
+    color: #ACAAC2;
+}
+
+@media screen and (min-width: 1200px){
+
+    body{
+        margin: 0;
+    }
+
+    .hero-container{
+        flex-direction: row-reverse;
+        height: 60vh;
+    }
+
+    .image-container{
+        background-image: url("../images/image-header-desktop.jpg");
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .content{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .content-container{
+        text-align: left;
+        padding: 0 2.5rem;
+    }
+
+    .title{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .text{
+        width: 90%;
+    }
+
+    .stats-container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .stats-container ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .stats-container li{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+    }
+}
